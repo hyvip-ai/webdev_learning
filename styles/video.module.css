@@ -1,0 +1,19 @@
+.videoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.videoCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1268px) {
+  .videoCard {
+    width: 100%;
+  }
+}
