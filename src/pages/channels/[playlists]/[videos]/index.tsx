@@ -5,7 +5,7 @@ import VideoCard from "../../../../components/VideoCard";
 import { usePlayListItems } from "../../../../hooks/playListItems.hooks";
 import { Video } from "../../../../types/videos";
 import { serialize } from "../../../../utils";
-import classes from "../../../../../styles/video.module.css";
+import classes from "../../../../styles/video.module.css";
 function Videos() {
   const router = useRouter();
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import classes from "../../styles/card.module.css";
+import classes from "../styles/card.module.css";
 import { limitDescription } from "../utils";
 interface channelCardProps {
   url: string;

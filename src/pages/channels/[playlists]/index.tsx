@@ -4,7 +4,7 @@ import { serialize } from "../../../utils/index";
 import { usePlayLists } from "../../../hooks/playlists.hooks";
 import PlayListCard from "../../../components/PlayListCard";
 import { Playlist } from "../../../types/playlist";
-import classes from "../../../../styles/playlist.module.css";
+import classes from "../../../styles/playlist.module.css";
 import Loader from "../../../components/Loader";
 function ChannelDetails() {
   const router = useRouter();

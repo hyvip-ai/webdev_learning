@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import classes from "../../styles/playlist.module.css";
+import classes from "../styles/playlist.module.css";
 import { limitDescription } from "../utils";
 import { useRouter } from "next/router";
 

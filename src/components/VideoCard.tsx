@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/video.module.css";
+import classes from "../styles/video.module.css";
 interface videoCardProps {
   id: string;
   videoId: string;

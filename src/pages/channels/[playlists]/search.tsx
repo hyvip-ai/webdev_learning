@@ -5,7 +5,7 @@ import VideoCard from "../../../components/VideoCard";
 import { useSearch } from "../../../hooks/search.hooks";
 import { SearchResult } from "../../../types/search";
 import { serialize } from "../../../utils/index";
-import classes from "../../../../styles/video.module.css";
+import classes from "../../../styles/video.module.css";
 
 function Search() {
   const router = useRouter();

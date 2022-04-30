@@ -49,11 +49,6 @@ button {
     transform: rotate(360deg);
   }
 }
-
-h3 {
-  text-align: center;
-}
-
 h3:hover {
   text-decoration: underline;
 }
