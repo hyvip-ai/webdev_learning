@@ -1,6 +1,6 @@
 ## YOUTUBE FOR LEARNING
 
-So this if going to be the one stop learning platform for web development
+So this is going to be the one stop learning platform for web development
 
 channels Included ---
 
