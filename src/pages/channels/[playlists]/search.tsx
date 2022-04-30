@@ -40,14 +40,18 @@ function Search() {
         <Loader />
       ) : (
         <div className={classes.videoContainer}>
-          {videos.items.map((video: SearchResult) => (
-            <VideoCard
-              key={video.etag}
-              id={video.id.videoId || ""}
-              videoId={video.id.videoId || ""}
-              {...video.snippet}
-            />
-          ))}
+          {videos.items.length ? (
+            videos.items.map((video: SearchResult) => (
+              <VideoCard
+                key={video.etag}
+                id={video.id.videoId || ""}
+                videoId={video.id.videoId || ""}
+                {...video.snippet}
+              />
+            ))
+          ) : (
+            <h3>No videos found</h3>
+          )}
         </div>
       )}
     </>

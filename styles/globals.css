@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 html,
 body {
   padding: 0;
@@ -20,6 +21,7 @@ button {
 
 * {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 .outer_loader {
@@ -49,11 +51,11 @@ button {
 }
 
 h3 {
-  text-decoration: underline;
+  text-align: center;
 }
 
 h3:hover {
-  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
 }
 
 input {
@@ -64,5 +66,21 @@ input {
 }
 
 h1 {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 1rem auto;
+}
+.container a {
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+.container a:hover {
+  text-decoration: underline;
+}
+
+h2 {
   text-align: center;
 }
