@@ -25,7 +25,7 @@ const channels = [
   },
   {
     name: "Yahoo Baba",
-    included: false,
+    included: true,
   },
   {
     name: "Fireship",
@@ -42,7 +42,11 @@ const channels = [
   },
   {
     name: "Dave Gray",
-    included: trye,
+    included: true,
+  },
+  {
+    name: "Code Evolution",
+    included: true,
   },
 ];
 ```
