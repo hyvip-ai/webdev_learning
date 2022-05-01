@@ -9,7 +9,6 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 button {
@@ -68,14 +67,41 @@ h1 {
   width: 80%;
   margin: 1rem auto;
 }
-.container a {
+a {
   font-weight: bolder;
   font-size: 1.6rem;
+  cursor: pointer !important;
 }
-.container a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 h2 {
   text-align: center;
+}
+
+.js_playground {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.page_playground_btn {
+  position: fixed;
+
+  bottom: 5%;
+  right: 5%;
+}
+
+.page_playground_btn button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+.page_playground {
+  position: fixed;
+  bottom: 25%;
+  right: 5%;
+  width: 30%;
+  height: 500px;
 }

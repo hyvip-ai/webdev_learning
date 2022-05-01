@@ -6,8 +6,18 @@ import { usePlayListItems } from "../../../../hooks/playListItems.hooks";
 import { Video } from "../../../../types/videos";
 import { serialize } from "../../../../utils";
 import classes from "../../../../styles/video.module.css";
+import { useStore } from "../../../../store";
+import shallow from "zustand/shallow";
 function Videos() {
   const router = useRouter();
+
+  const { showPlayGround, togglePlayGround } = useStore(
+    (state: any) => ({
+      showPlayGround: state.showPlayGround,
+      togglePlayGround: state.togglePlayGround,
+    }),
+    shallow
+  );
 
   const [queryData, setQueryData] = useState<{
     playlistId: string | string[] | null;
@@ -38,16 +48,32 @@ function Videos() {
       {loadingVideos || !videos ? (
         <Loader />
       ) : (
-        <div className={classes.videoContainer}>
-          {videos.items.map((video: Video) => (
-            <VideoCard
-              key={video.id}
-              id={video.id}
-              {...video.contentDetails}
-              {...video.snippet}
-            />
-          ))}
-        </div>
+        <>
+          <div className={classes.videoContainer}>
+            {videos.items.map((video: Video) => (
+              <VideoCard
+                key={video.id}
+                id={video.id}
+                {...video.contentDetails}
+                {...video.snippet}
+              />
+            ))}
+          </div>
+          <div className="page_playground_btn">
+            <button onClick={togglePlayGround}>Toggle PlayGround</button>
+          </div>
+          <div className="page_playground">
+            {showPlayGround ? (
+              <iframe
+                src="https://www.programiz.com/javascript/online-compiler/"
+                width="100%"
+                height="500px"
+                title="Javascript playground"
+                frameBorder="0"
+              ></iframe>
+            ) : null}
+          </div>
+        </>
       )}
     </>
   );
